@@ -3,19 +3,6 @@ a floating-point number, and the time period as an integer. The simple interest 
 The result is then rounded down to the nearest integer using the math.floor() function from the math module. Finally, the calculated simple interest is printed 
 using the print() function.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 import math
 
 principal = int(input())

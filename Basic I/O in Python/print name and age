@@ -1,3 +1,23 @@
+
+
+This code is a simple Python program that prompts the user to input their name and age. The input for the name is stored as a string and the input for age is 
+first converted to an integer using the int() function and then to a string using the str() function. Finally, the code uses the print() function to display a 
+sentence that includes the user's name and age, with the values being inserted into the sentence using the format() method. The sentence displayed by the code 
+is "The name of the person is [name] and the age is [age].", where [name] and [age] are the values input by the user.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 name = input()
 age = int(input())
 age1 = str(age)

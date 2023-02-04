@@ -1,0 +1,4 @@
+function area(length , breadth){
+
+    a = length * breadth
+        return a

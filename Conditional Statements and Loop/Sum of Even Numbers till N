@@ -1,0 +1,32 @@
+This is a Python code that calculates the sum of the first n positive even numbers. The code takes an integer input and stores it in the "n" variable. The "add" variable is initialized to zero and is used to store the sum of even numbers. The "n3" variable is initialized to 2 as it represents the first even number.
+
+If the input number "n" is even, the while loop runs and adds all even numbers less than or equal to "n" to the "add" variable. The "n3" variable is incremented by 2 after each iteration to get the next even number.
+
+If the input number "n" is odd, the value of "n" is decremented by 1 to make it even and the same while loop runs as in the previous case.
+
+Finally, the sum of even numbers is printed.
+
+
+
+
+
+
+
+
+
+
+
+
+n=int(input())
+add=0
+n3=2
+if n%2==0:
+    while n3<=n:
+        add=add+n3
+        n3=n3+2
+else:
+    n=n-1
+    while n3<=n:
+        add=add+n3
+        n3=n3+2
+print(add)

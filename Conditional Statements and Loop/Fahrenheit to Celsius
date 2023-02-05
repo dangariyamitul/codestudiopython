@@ -1,0 +1,7 @@
+Fahrenheit = int(input())
+E = int(input())
+W = int(input())
+while Fahrenheit <= E:
+    Fahrenheit_to_Celsius = (((Fahrenheit - 32) * 5) / 9)
+    print(Fahrenheit, int(Fahrenheit_to_Celsius))
+    Fahrenheit = Fahrenheit + W

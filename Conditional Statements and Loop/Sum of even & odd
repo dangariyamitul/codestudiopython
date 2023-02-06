@@ -1,3 +1,11 @@
+
+This code takes an integer input n and calculates the sum of its even and odd digits. The input n is first transformed into a string and then each character of 
+the string is processed one by one. The last digit of the input is extracted using the modulo operator % with 10. If the extracted digit is even, it is added to 
+the sum_of_even, otherwise it is added to the sum_of_odd. The input n is then updated by dividing it by 10 using integer division // and the process repeats until 
+n becomes 0. The final sums of even and odd digits are then printed.
+
+
+
 #Your code goes her
 n = int(input())
 sum_of_even = 0

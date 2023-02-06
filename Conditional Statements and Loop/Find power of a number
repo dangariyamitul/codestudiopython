@@ -1,3 +1,7 @@
+This code takes two integer inputs x and y and calculates x^y using the pow function from the math library. The result of pow(x, y) is then passed to the 
+floor function from the math library, which returns the largest integer that is less than or equal to power, effectively rounding down the result. The 
+final result is then printed.
+
 import math
 x, y = [int(x) for x in input().split()]
 power = (math.pow(x, y))

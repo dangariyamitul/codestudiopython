@@ -1,0 +1,26 @@
+
+This code defines a function factorial that calculates the factorial of a given integer n. The factorial of a positive integer n is the product of all positive 
+integers less than or equal to n.The function first checks if n is negative, in which case it returns the string "Error". If n is 0 or 1, the function returns 1, 
+as the factorial of 0 and 1 are both 1. Otherwise, the function returns the result of n * factorial(n-1), effectively calling the function recursively until n 
+reaches 0 or 1.Finally, an integer input n is taken and the result of factorial(n) is printed.
+
+def factorial(n):
+    if n < 0:
+        return "Error"
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+n = int(input())
+print(factorial(n))
+
+
+
+
+
+
+
+
+
+

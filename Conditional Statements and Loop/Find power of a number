@@ -1,0 +1,19 @@
+import math
+x, y = [int(x) for x in input().split()]
+power = (math.pow(x, y))
+print(math.floor(power))
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

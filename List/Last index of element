@@ -1,0 +1,14 @@
+
+
+
+n = int(input())
+list1 = list(map(int, input().split()))[:n]
+n1 = int(input())
+if n1 in list1:
+    for i in reversed(range(len(list1))):
+        if list1[i] == n1:
+            print(i)
+            break
+
+else:
+    print('-1')

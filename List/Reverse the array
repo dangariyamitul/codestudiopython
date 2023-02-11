@@ -1,0 +1,8 @@
+n = int(input().strip())
+array = list(map(int, input().strip().split()))
+
+i=len(array)-1
+
+while i >=0:
+    print(array[i],end=' ')
+    i=i-1;

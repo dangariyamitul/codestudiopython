@@ -1,0 +1,9 @@
+def rotateArray(arr, k):
+    return arr[k:] + arr[:k]
+
+n = int(input().strip())
+arr = list(map(int, input().strip().split()))
+k = int(input().strip())
+
+result = rotateArray(arr, k)
+print(*result)

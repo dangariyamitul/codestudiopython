@@ -1,0 +1,56 @@
+import mysql.connector
+rollno = int(input("Enter rollno: "))
+name = input("Enter name: ")
+mark = int(input("Enter mark: "))
+
+try:
+    mysqldb=mysql.connector.connect(host="localhost",user="root",password="",database="testdataset")
+    mysqlcursor=mysqldb.cursor()
+
+    mysqlcursor.execute(f"insert into studentredcord (rollno,name,mark) values({rollno},'{name}',{mark})")
+
+    mysqldb.commit()
+    print('record inseted into the tabel')
+
+except:
+    mysqldb.rollback()
+    print('Insert failed')
+
+
+
+
+
+
+# mysqldb.close()
+
+#display data
+
+try:
+    mysqlcursor.execute("select * from studentredcord")
+    result=mysqlcursor.fetchall()
+    for i in result:
+        rollno=i[0]
+        name=i[1]
+        mark=i[2]
+        print(rollno,name,mark)
+except:
+    print('some issue in the code')
+
+# mysqlcursor.close()
+
+#update the record in..
+
+try:
+    mysqlcursor.execute("update studentredcord set name='mitul' where rollno=1 ")
+    mysqldb.commit()
+    print('record update')
+except:
+    mysqlcursor.rollback()
+
+#delete 
+try:
+    # mysqlcursor.execute("delete from studentredcord where rollno=1 ")
+    mysqldb.commit()
+    print('record  is delete')
+except:
+    mysqlcursor.rollback()

@@ -1,0 +1,5 @@
+def count_words(string):
+    return len(string.split())
+
+string = input().strip()
+print(count_words(string))

@@ -1,0 +1,8 @@
+def reverseStringWordWise(string):
+    words = string.split()
+    words = words[::-1]
+    return ' '.join(words)
+
+string = input()
+ans = reverseStringWordWise(string)
+print(ans)

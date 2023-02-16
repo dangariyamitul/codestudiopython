@@ -1,0 +1,8 @@
+str1=input()
+str2=input()
+if sorted(str2)==sorted(str1):
+    print("true")
+else:
+    print("false")
+
+

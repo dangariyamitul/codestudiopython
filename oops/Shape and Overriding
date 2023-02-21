@@ -1,0 +1,34 @@
+class Shape:
+    def __init__(self):
+        pass
+
+class Square(Shape):
+    def __init__(self, length):
+        Shape.__init__(self)
+        self.length = length
+
+    def calculateArea(self):
+        return self.length * self.length
+
+    def printMyType(self):
+        print("square")
+
+class Rectangle(Shape):
+    def __init__(self, length, breadth):
+        Shape.__init__(self)
+        self.length = length
+        self.breadth = breadth
+
+    def calculateArea(self):
+        return self.length * self.breadth
+
+    def printMyType(self):
+        print("rectangle")
+
+square = Square(5)
+square.printMyType()
+print(square.calculateArea())
+
+rectangle = Rectangle(5, 4)
+rectangle.printMyType()
+print(rectangle.calculateArea())
